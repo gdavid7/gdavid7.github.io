@@ -121,6 +121,10 @@ main {
 
 .hero .summary {
     font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Project Cards */

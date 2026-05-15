@@ -169,17 +169,104 @@ main {
     color: var(--muted-text-color);
 }
 
-/* About & Projects Sections */
-.about-content, .projects-content, .contact-content {
+/* Section layout */
+.about-content,
+.projects-content,
+.contact-content,
+.education-content,
+.experience-content,
+.research-content,
+.skills-content {
     max-width: 800px;
     margin: 4rem auto;
 }
 
-.about-content h2, .projects-content h2, .contact-content h2 {
+.about-content h2,
+.projects-content h2,
+.contact-content h2,
+.education-content h2,
+.experience-content h2,
+.research-content h2,
+.skills-content h2 {
     font-size: 2rem;
     border-bottom: 2px solid var(--link-color);
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
+}
+
+/* Education / Experience / Research entries */
+.entry {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.entry-header h3,
+.entry > h3 {
+    margin: 0;
+    color: var(--link-color);
+}
+
+.entry-meta {
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+}
+
+.entry-subhead {
+    font-style: italic;
+    margin: 0.25rem 0 0.75rem;
+    color: var(--muted-text-color);
+}
+
+.entry ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+}
+
+.entry li {
+    margin-bottom: 0.4rem;
+}
+
+/* Skills */
+.skills-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.skills-group h4 {
+    margin: 0 0 0.6rem;
+    color: var(--link-color);
+    font-size: 1rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
 }
 
 /* Contact Section with Logos */

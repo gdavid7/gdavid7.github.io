@@ -12,6 +12,8 @@
             <a href="index.html" class="logo">David Gershony</a>
             <nav class="nav">
                 <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#research">Research</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -33,11 +35,103 @@
             <section id="about" class="about-content">
                 <h2 style="text-align: center;">My Story</h2>
                 <p>
-                    I get excited about messy problems - the kind that sit between teams, tools, and users - and I love turning them into clean, intuitive solutions. I've worked across startups, enterprise teams, and nonprofits to scale systems, build from scratch, and bring clarity to complexity. No matter the setting, I care most about building meaningful, practiful products and seeing them through with thoughtful execution.
+                    I get excited about messy problems - the kind that sit between teams, tools, and users - and I love turning them into clean, intuitive solutions. I've worked across startups, enterprise teams, and nonprofits to scale systems, build from scratch, and bring clarity to complexity. No matter the setting, I care most about building meaningful, practical products and seeing them through with thoughtful execution.
                 </p>
                 <p>
                     Outside of work or school, I love to backpack through different countries, hit the gym, and DJ in my free time.
                 </p>
+            </section>
+
+            <section id="education" class="education-content">
+                <h2 style="text-align: center;">Education</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>University of California, Irvine</h3>
+                        <span class="entry-meta">Sep 2023 - Jun 2027</span>
+                    </div>
+                    <p class="entry-subhead">B.S. Computer Science</p>
+                    <p><strong>Coursework:</strong> AI/ML, Statistics, Linear Algebra, Operating Systems, Data Structures &amp; Algorithms, Distributed Systems</p>
+                    <p><strong>Activities:</strong> UC Investments, Association for Computing Machinery (ACM), Commit the Change &mdash; Building Tech for Social Good</p>
+                </div>
+            </section>
+
+            <section id="experience" class="experience-content">
+                <h2 style="text-align: center;">Experience</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Amazon</h3>
+                        <span class="entry-meta">Seattle, WA &middot; Fall 2026</span>
+                    </div>
+                    <p class="entry-subhead">Incoming Software Development Engineer Intern</p>
+                    <ul>
+                        <li>Building an AI orchestrator on top of Claude Opus 4 that can autonomously build, test, and iterate on Amazon software.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Auger</h3>
+                        <span class="entry-meta">Bellevue, WA &middot; Summer 2026</span>
+                    </div>
+                    <p class="entry-subhead">Incoming Software Development Engineer Intern</p>
+                    <ul>
+                        <li>Building ML models for economic decision-making at a $100M-backed AI supply chain startup.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Capital One</h3>
+                        <span class="entry-meta">Washington, D.C. &middot; Jun 2025 - Aug 2025</span>
+                    </div>
+                    <p class="entry-subhead">Software Engineering Intern</p>
+                    <ul>
+                        <li>Built and shipped Capital One's new Credit Card Testing API, serving 4,600+ engineers.</li>
+                        <li>Designed scalable backend services using TypeScript, AWS Lambda, and DynamoDB.</li>
+                        <li>Reduced environment setup time from hours to seconds, saving $11M annually.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Eventene</h3>
+                        <span class="entry-meta">Santa Monica, CA &middot; Jun 2024 - Sep 2024</span>
+                    </div>
+                    <p class="entry-subhead">Software Engineering Intern</p>
+                    <ul>
+                        <li>Built the import-export feature for Eventene's event management platform, integrating Ruby APIs and enabling DB backup.</li>
+                        <li>Improved ETL pipelines for large event datasets, optimizing SQL queries for 50K+ records across Postgres microservices.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Commit the Change</h3>
+                        <span class="entry-meta">Irvine, CA &middot; Oct 2023 - Jun 2024</span>
+                    </div>
+                    <p class="entry-subhead">Technology Consultant</p>
+                    <ul>
+                        <li>Built a full-stack nationwide inventory management system for Feeding Pets of the Homeless, enabling a 700% increase in annual donations (250K &rarr; 2M lbs) by digitizing intake, tracking, and distribution.</li>
+                        <li>Constructed the API from scratch; implemented Figma graphics in the frontend using React, HTML/CSS, and JavaScript.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="research" class="research-content">
+                <h2 style="text-align: center;">Research</h2>
+                <div class="entry">
+                    <h3>Cognitive Embeddings: Neural Encoding Models as Similarity Metrics</h3>
+                    <p class="entry-subhead">Gershony, D. &mdash; Ongoing</p>
+                    <ul>
+                        <li>Created a new embedding algorithm using Meta's fMRI brain encoding model to measure how the brain processes media.</li>
+                        <li>Ran Python, TRIBE v2, and PyTorch experiments across 900+ text pairs; results show brain-based similarity captures fundamentally different signals than standard embeddings (p&lt;0.001); currently training a distilled model for public release.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <h3>A Pattern Hierarchy for Using AI for Task Allocation in Agile Project Management</h3>
+                    <p class="entry-subhead">Patel, M., Gershony, D., et al. &mdash; Accepted to XP 2026</p>
+                    <ul>
+                        <li>Built an ML system that auto-routes GitHub issues to the developer most likely to resolve them, trained on 500k+ historical tasks.</li>
+                        <li>Improved assignment accuracy MRR +74% through CodeBERT embedding-based feature modeling and scikit-learn ranking.</li>
+                        <li>Accepted to the International Conference on Agile Software Development (XP 2026).</li>
+                    </ul>
+                </div>
             </section>
 
             <section id="projects" class="projects-content">
@@ -47,6 +141,15 @@
                         <h3>Echo</h3>
                         <p class="impact">An AI-powered voice assistant that streamlines the patient intake process for medical offices.</p>
                         <a href="https://github.com/gdavid7/echo" target="_blank">View on my Github &rarr;</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Infy</h3>
+                        <p class="impact">An AI-powered coaching analytics web app for the Makapo Aquatics Foundation that transcribes and organizes on-water recordings into structured training notes for Paralympic rowing coaches.</p>
+                        <p><em>Adopted by 100% of the coaching staff within two weeks; cut documentation time by 60%.</em></p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Nomm</h3>
+                        <p class="impact">An iOS social app to discover restaurants based on where your friends like to eat, with a real-time friend activity map, group-based sharing, and offline-first sync.</p>
                     </div>
                     <div class="project-card">
                         <h3>8-K Insight</h3>
@@ -67,6 +170,53 @@
                         <h3>Your Turn!</h3>
                         <p class="impact">An augmented reality Snapchat exercise lens that gamified at-home workouts, garnering over 78,000 plays.</p>
                         <a href="https://devpost.com/software/your-turn-t8azpw" target="_blank">View on Devpost &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills-content">
+                <h2 style="text-align: center;">Skills</h2>
+                <div class="skills-groups">
+                    <div class="skills-group">
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <h4>Frameworks &amp; Libraries</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">scikit-learn</span>
+                            <span class="skill-tag">Transformers</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <h4>Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Linux/Unix</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <h4>Concepts</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Statistical Modeling</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">Feature Engineering</span>
+                            <span class="skill-tag">Ranking &amp; Recommendation</span>
+                            <span class="skill-tag">ETL Pipelines</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -95,7 +245,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 David Gershony</p>
+            <p>&copy; 2026 David Gershony</p>
             <p class="meta-footer">Built with HTML, CSS, and JavaScript.</p>
         </div>
     </footer>

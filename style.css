@@ -1,342 +1,177 @@
-/* General Body Styles */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
     line-height: 1.6;
+    color: #222;
+    background: #fff;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Light/Dark Mode Color Variables */
-:root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --muted-text-color: #6c757d;
-    --header-bg: #f8f9fa;
-    --header-border: #dee2e6;
-    --link-color: #007bff;
-    --link-hover-color: #0056b3;
-    --card-bg: #ffffff;
-    --card-border: #e9ecef;
-}
-
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --muted-text-color: #999999;
-    --header-bg: #1e1e1e;
-    --header-border: #333333;
-    --link-color: #6ea8ff;
-    --link-hover-color: #9ecaff;
-    --card-bg: #1e1e1e;
-    --card-border: #333333;
-}
-
-/* Container */
 .container {
-    max-width: 960px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px 20px 60px;
 }
 
-/* Header and Navigation */
-.header {
-    background-color: var(--header-bg);
-    border-bottom: 1px solid var(--header-border);
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+a {
+    color: #2a7ae2;
     text-decoration: none;
-    color: var(--text-color);
 }
 
-.nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
-
-.nav li {
-    margin-left: 20px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: var(--link-color);
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.nav a:hover,
-.nav a.active {
-    color: var(--link-hover-color);
+a:hover {
     text-decoration: underline;
 }
 
-/* Theme Toggle */
-.theme-toggle {
-    background: none;
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 5px 10px;
+/* Header */
+.header {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
 }
 
-/* Main Content */
-main {
-    padding: 4rem 0;
+.header-photo {
+    flex-shrink: 0;
 }
 
-.hero {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
+.header-photo img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+.header-info {
+    flex: 1;
+    min-width: 0;
 }
 
-.hero .tagline {
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-}
-
-.hero .summary {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Project Cards */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.project-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.project-card h3 {
-    margin-top: 0;
-    color: var(--link-color);
-}
-
-.project-card .impact {
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.project-card a {
-    text-decoration: none;
-    color: var(--link-color);
-}
-
-.project-card p > em {
-    color: var(--muted-text-color);
-}
-
-/* Section layout */
-.about-content,
-.projects-content,
-.contact-content,
-.education-content,
-.experience-content,
-.research-content,
-.skills-content {
-    max-width: 800px;
-    margin: 4rem auto;
-}
-
-.about-content h2,
-.projects-content h2,
-.contact-content h2,
-.education-content h2,
-.experience-content h2,
-.research-content h2,
-.skills-content h2 {
+.header h1 {
     font-size: 2rem;
-    border-bottom: 2px solid var(--link-color);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 0.75rem;
 }
 
-/* Education / Experience / Research entries */
-.entry {
-    margin-bottom: 1.75rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--card-border);
+.header p {
+    margin: 0 0 1rem;
 }
 
-.entry:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.position {
+    font-size: 1.1rem;
 }
 
-.entry-header {
+.social-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 18px;
+    margin-top: 1rem;
 }
 
-.entry-header h3,
-.entry > h3 {
-    margin: 0;
-    color: var(--link-color);
-}
-
-.entry-meta {
-    font-size: 0.9rem;
-    color: var(--muted-text-color);
-}
-
-.entry-subhead {
-    font-style: italic;
-    margin: 0.25rem 0 0.75rem;
-    color: var(--muted-text-color);
-}
-
-.entry ul {
-    margin: 0.5rem 0 0;
-    padding-left: 1.25rem;
-}
-
-.entry li {
-    margin-bottom: 0.4rem;
-}
-
-/* Skills */
-.skills-groups {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-}
-
-.skills-group h4 {
-    margin: 0 0 0.6rem;
-    color: var(--link-color);
-    font-size: 1rem;
-}
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.skill-tag {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 999px;
-    padding: 0.3rem 0.75rem;
-    font-size: 0.875rem;
-    color: var(--text-color);
-}
-
-/* Contact Section with Logos */
-.contact-links {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.contact-link {
+.social-icons a {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.1rem;
-    transition: color 0.2s;
 }
 
-.contact-link:hover {
-    color: var(--link-color);
-}
-
-.contact-link:hover svg {
-    fill: var(--link-color);
-}
-
-.contact-link svg {
-    fill: var(--text-color);
+.social-icons svg {
+    width: 32px;
+    height: 32px;
+    fill: #444;
     transition: fill 0.2s;
 }
 
-.based-in {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: var(--muted-text-color);
+.social-icons a:hover svg {
+    fill: #2a7ae2;
 }
 
-/* Hide old form styles */
-.contact-form {
-    display: none;
+/* Navigation */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1.5rem 0;
 }
 
-/* Footer */
-footer {
+.section-nav {
     text-align: center;
-    padding: 2rem 0;
+}
+
+.section-nav h3 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.section-nav a {
+    margin: 0 0.3rem;
+}
+
+/* Body content */
+h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+tt {
+    font-family: 'Menlo', 'Consolas', monospace;
+    font-size: 0.95em;
+}
+
+.last-update {
+    color: #888;
+    font-size: 0.9rem;
     margin-top: 2rem;
-    border-top: 1px solid var(--header-border);
 }
 
-.meta-footer {
-    font-size: 0.8rem;
-    color: var(--muted-text-color);
-    margin-top: 0.5rem;
+/* Project / research entries */
+.entry {
+    margin-bottom: 1.5rem;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .header .container {
+.entry-title {
+    font-weight: 700;
+    color: #222;
+}
+
+.entry-meta {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.entry p {
+    margin: 0.25rem 0;
+}
+
+.entry ul {
+    margin: 0.4rem 0 0;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .header {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .nav ul {
-        margin-top: 1rem;
+    .header-photo img {
+        max-width: 220px;
     }
-    
-    .hero h1 {
-        font-size: 2.5rem;
+
+    .social-icons {
+        justify-content: center;
     }
 }

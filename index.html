@@ -1,255 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Gershony | Home</title>
+    <title>David Gershony</title>
+    <meta name="author" content="David Gershony">
+    <meta name="description" content="Homepage of David Gershony">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">David Gershony</a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+<div class="container">
+
+<div class="header">
+    <div class="header-photo">
+        <img src="images/headshot.jpg" alt="David Gershony">
+    </div>
+    <div class="header-info">
+        <h1>David Gershony</h1>
+        <p class="position">
+            Undergraduate Student, <a href="https://www.cs.uci.edu/">Computer Science</a><br>
+            <a href="https://uci.edu/">University of California, Irvine</a><br>
+            Class of 2027
+        </p>
+        <p>
+            <b>Email</b>: <tt>david.gershony.7@gmail.com</tt><br>
+            <b>Based in</b>: Seattle, WA &middot; Irvine, CA
+        </p>
+        <div class="social-icons">
+            <a href="mailto:david.gershony.7@gmail.com" aria-label="Email" title="Email">
+                <svg viewBox="0 0 24 24"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/david-gershony" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 13 11.18V10.13H9.75V18.5H13V13.57C13 12.8 13.44 12.25 14.2 12.25C14.96 12.25 15.5 12.8 15.5 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 6 7.76 5.19 6.88 5.19C6 5.19 5.19 6 5.19 6.88C5.19 7.76 6 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/></svg>
+            </a>
+            <a href="https://github.com/gdavid7" target="_blank" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
         </div>
-    </header>
+    </div>
+</div>
 
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h1>David Gershony</h1>
-                <p class="tagline">Building solutions that bridge software, strategy, and real-world impact.</p>
-                <p class="summary">
-                    I'm a technologist, leader, and product builder who loves solving real-world problems, whether its optimizing developer infrastructure for Capital One's credit cards, building an AI tool to assist Paralympic rowing coaches, or creating a voice assistant that streamlines patient intake for clinics. I move fast, think cross-functionally, and aim to make an impact through everything I build.
-                </p>
-            </section>
+<hr/>
+<nav class="section-nav">
+    <h3>
+        <a href="projects.html">Projects</a> /
+        <a href="research.html">Research</a> /
+        <a href="etc.html">Etc</a>
+    </h3>
+</nav>
+<hr/>
 
-            <section id="about" class="about-content">
-                <h2 style="text-align: center;">My Story</h2>
-                <p>
-                    I get excited about messy problems - the kind that sit between teams, tools, and users - and I love turning them into clean, intuitive solutions. I've worked across startups, enterprise teams, and nonprofits to scale systems, build from scratch, and bring clarity to complexity. No matter the setting, I care most about building meaningful, practical products and seeing them through with thoughtful execution.
-                </p>
-                <p>
-                    Outside of work or school, I love to backpack through different countries, hit the gym, and DJ in my free time.
-                </p>
-            </section>
+<p>
+I'm an undergraduate student in <a href="https://www.cs.uci.edu/">Computer Science</a> at <a href="https://uci.edu/">UC Irvine</a>. I'll be joining <a href="https://www.amazon.jobs/">Amazon</a> as a Software Development Engineer Intern in Fall 2026 and <a href="https://www.auger.ai/">Auger</a> in Summer 2026. Previously, I interned at <a href="https://www.capitalone.com/">Capital One</a>, where I built a credit card testing API serving 4,600+ engineers, and at <a href="https://www.eventene.com/">Eventene</a>.
+<br><br>
+I get excited about messy problems &mdash; the kind that sit between teams, tools, and users &mdash; and I love turning them into clean, intuitive solutions. I've worked across startups, enterprise teams, and nonprofits to scale systems, build from scratch, and bring clarity to complexity.
+<br><br>
+Outside of work or school, I love to backpack through different countries, hit the gym, and DJ in my free time.
+</p>
 
-            <section id="education" class="education-content">
-                <h2 style="text-align: center;">Education</h2>
-                <div class="entry">
-                    <div class="entry-header">
-                        <h3>University of California, Irvine</h3>
-                        <span class="entry-meta">Sep 2023 - Jun 2027</span>
-                    </div>
-                    <p class="entry-subhead">B.S. Computer Science</p>
-                    <p><strong>Coursework:</strong> AI/ML, Statistics, Linear Algebra, Operating Systems, Data Structures &amp; Algorithms, Distributed Systems</p>
-                    <p><strong>Activities:</strong> UC Investments, Association for Computing Machinery (ACM), Commit the Change &mdash; Building Tech for Social Good</p>
-                </div>
-            </section>
+<h3 id="education">Education</h3>
+<ul>
+    <li>2023&ndash;2027: B.S. in Computer Science, University of California, Irvine</li>
+</ul>
 
-            <section id="experience" class="experience-content">
-                <h2 style="text-align: center;">Experience</h2>
-                <div class="entry">
-                    <div class="entry-header">
-                        <h3>Amazon</h3>
-                        <span class="entry-meta">Seattle, WA &middot; Fall 2026</span>
-                    </div>
-                    <p class="entry-subhead">Incoming Software Development Engineer Intern</p>
-                    <ul>
-                        <li>Building an AI orchestrator on top of Claude Opus 4 that can autonomously build, test, and iterate on Amazon software.</li>
-                    </ul>
-                </div>
-                <div class="entry">
-                    <div class="entry-header">
-                        <h3>Auger</h3>
-                        <span class="entry-meta">Bellevue, WA &middot; Summer 2026</span>
-                    </div>
-                    <p class="entry-subhead">Incoming Software Development Engineer Intern</p>
-                    <ul>
-                        <li>Building ML models for economic decision-making at a $100M-backed AI supply chain startup.</li>
-                    </ul>
-                </div>
-                <div class="entry">
-                    <div class="entry-header">
-                        <h3>Capital One</h3>
-                        <span class="entry-meta">Washington, D.C. &middot; Jun 2025 - Aug 2025</span>
-                    </div>
-                    <p class="entry-subhead">Software Engineering Intern</p>
-                    <ul>
-                        <li>Built and shipped Capital One's new Credit Card Testing API, serving 4,600+ engineers.</li>
-                        <li>Designed scalable backend services using TypeScript, AWS Lambda, and DynamoDB.</li>
-                        <li>Reduced environment setup time from hours to seconds, saving $11M annually.</li>
-                    </ul>
-                </div>
-                <div class="entry">
-                    <div class="entry-header">
-                        <h3>Eventene</h3>
-                        <span class="entry-meta">Santa Monica, CA &middot; Jun 2024 - Sep 2024</span>
-                    </div>
-                    <p class="entry-subhead">Software Engineering Intern</p>
-                    <ul>
-                        <li>Built the import-export feature for Eventene's event management platform, integrating Ruby APIs and enabling DB backup.</li>
-                        <li>Improved ETL pipelines for large event datasets, optimizing SQL queries for 50K+ records across Postgres microservices.</li>
-                    </ul>
-                </div>
-                <div class="entry">
-                    <div class="entry-header">
-                        <h3>Commit the Change</h3>
-                        <span class="entry-meta">Irvine, CA &middot; Oct 2023 - Jun 2024</span>
-                    </div>
-                    <p class="entry-subhead">Technology Consultant</p>
-                    <ul>
-                        <li>Built a full-stack nationwide inventory management system for Feeding Pets of the Homeless, enabling a 700% increase in annual donations (250K &rarr; 2M lbs) by digitizing intake, tracking, and distribution.</li>
-                        <li>Constructed the API from scratch; implemented Figma graphics in the frontend using React, HTML/CSS, and JavaScript.</li>
-                    </ul>
-                </div>
-            </section>
+<h3 id="experience">Experience</h3>
+<ul>
+    <li>2026 Fall: Incoming Software Development Engineer Intern, Amazon (Seattle, WA)</li>
+    <li>2026 Summer: Incoming Software Development Engineer Intern, Auger (Bellevue, WA)</li>
+    <li>2025/6&ndash;2025/8: Software Engineering Intern, Capital One (Washington, D.C.)</li>
+    <li>2024/6&ndash;2024/9: Software Engineering Intern, Eventene (Santa Monica, CA)</li>
+    <li>2023/10&ndash;2024/6: Technology Consultant, Commit the Change (Irvine, CA)</li>
+</ul>
 
-            <section id="research" class="research-content">
-                <h2 style="text-align: center;">Research</h2>
-                <div class="entry">
-                    <h3>Cognitive Embeddings: Neural Encoding Models as Similarity Metrics</h3>
-                    <p class="entry-subhead">Gershony, D. &mdash; Ongoing</p>
-                    <ul>
-                        <li>Created a new embedding algorithm using Meta's fMRI brain encoding model to measure how the brain processes media.</li>
-                        <li>Ran Python, TRIBE v2, and PyTorch experiments across 900+ text pairs; results show brain-based similarity captures fundamentally different signals than standard embeddings (p&lt;0.001); currently training a distilled model for public release.</li>
-                    </ul>
-                </div>
-                <div class="entry">
-                    <h3>A Pattern Hierarchy for Using AI for Task Allocation in Agile Project Management</h3>
-                    <p class="entry-subhead">Patel, M., Gershony, D., et al. &mdash; Accepted to XP 2026</p>
-                    <ul>
-                        <li>Built an ML system that auto-routes GitHub issues to the developer most likely to resolve them, trained on 500k+ historical tasks.</li>
-                        <li>Improved assignment accuracy MRR +74% through CodeBERT embedding-based feature modeling and scikit-learn ranking.</li>
-                        <li>Accepted to the International Conference on Agile Software Development (XP 2026).</li>
-                    </ul>
-                </div>
-            </section>
+<hr/>
+<p class="last-update">Last update: May 2026</p>
 
-            <section id="projects" class="projects-content">
-                <h2 style="text-align: center;">Some Things I've Built</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>Echo</h3>
-                        <p class="impact">An AI-powered voice assistant that streamlines the patient intake process for medical offices.</p>
-                        <a href="https://github.com/gdavid7/echo" target="_blank">View on my Github &rarr;</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Infy</h3>
-                        <p class="impact">An AI-powered coaching analytics web app for the Makapo Aquatics Foundation that transcribes and organizes on-water recordings into structured training notes for Paralympic rowing coaches.</p>
-                        <p><em>Adopted by 100% of the coaching staff within two weeks; cut documentation time by 60%.</em></p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Nomm</h3>
-                        <p class="impact">An iOS social app to discover restaurants based on where your friends like to eat, with a real-time friend activity map, group-based sharing, and offline-first sync.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>8-K Insight</h3>
-                        <p class="impact">A real-time trading engine that parses SEC filings using NLP to flag market-moving events for biotech stocks.</p>
-                        <p><em>Coming out soon</em></p>
-                    </div>
-                    <div class="project-card">
-                        <h3>VIRAL.AI</h3>
-                        <p class="impact">A machine learning tool that analyzes trending videos to generate personalized, data-driven recommendations for content creators.</p>
-                        <a href="https://devpost.com/software/viral-ai" target="_blank">View on Devpost &rarr;</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Cryptocode</h3>
-                        <p class="impact">A user-friendly open-source Python cryptography library with over 4 million downloads on PyPI.</p>
-                        <a href="https://github.com/gdavid7/cryptocode" target="_blank">View on my Github &rarr;</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Your Turn!</h3>
-                        <p class="impact">An augmented reality Snapchat exercise lens that gamified at-home workouts, garnering over 78,000 plays.</p>
-                        <a href="https://devpost.com/software/your-turn-t8azpw" target="_blank">View on Devpost &rarr;</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills" class="skills-content">
-                <h2 style="text-align: center;">Skills</h2>
-                <div class="skills-groups">
-                    <div class="skills-group">
-                        <h4>Languages</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">SQL</span>
-                        </div>
-                    </div>
-                    <div class="skills-group">
-                        <h4>Frameworks &amp; Libraries</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">scikit-learn</span>
-                            <span class="skill-tag">Transformers</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">React</span>
-                        </div>
-                    </div>
-                    <div class="skills-group">
-                        <h4>Tools</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Linux/Unix</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">AWS</span>
-                        </div>
-                    </div>
-                    <div class="skills-group">
-                        <h4>Concepts</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Statistical Modeling</span>
-                            <span class="skill-tag">NLP</span>
-                            <span class="skill-tag">RAG</span>
-                            <span class="skill-tag">Feature Engineering</span>
-                            <span class="skill-tag">Ranking &amp; Recommendation</span>
-                            <span class="skill-tag">ETL Pipelines</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="contact-content" style="text-align: center;">
-                <h2>Get In Touch</h2>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out.</p>
-                <div class="contact-links">
-                    <a href="mailto:david.gershony.7@gmail.com" class="contact-link" aria-label="Email">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                            <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"></path>
-                        </svg>
-                        <span>david.gershony.7@gmail.com</span>
-                    </a>
-                    <a href="https://linkedin.com/in/david-gershony" target="_blank" class="contact-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                            <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 13 11.18V10.13H9.75V18.5H13V13.57C13 12.8 13.44 12.25 14.2 12.25C14.96 12.25 15.5 12.8 15.5 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 6 7.76 5.19 6.88 5.19C6 5.19 5.19 6 5.19 6.88C5.19 7.76 6 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"></path>
-                        </svg>
-                        <span>linkedin.com/in/david-gershony</span>
-                    </a>
-                </div>
-                <p class="based-in">Based in Seattle, WA and Irvine, CA</p>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 David Gershony</p>
-            <p class="meta-footer">Built with HTML, CSS, and JavaScript.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+</div>
 </body>
 </html>

@@ -104,6 +104,64 @@ hr {
     margin: 0 0.3rem;
 }
 
+/* Callout banner */
+.callout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #f0f5fc;
+    border: 1px solid #d6e3f5;
+    border-left: 4px solid #2a7ae2;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 1.75rem 0 0;
+    color: #222;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.callout:hover {
+    text-decoration: none;
+    background: #e7f0fb;
+}
+
+.callout-body {
+    min-width: 0;
+}
+
+.callout-title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a3a6b;
+}
+
+.callout-text {
+    display: block;
+    color: #555;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+.callout-arrow {
+    flex-shrink: 0;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #2a7ae2;
+    transition: transform 0.15s ease;
+}
+
+.callout:hover .callout-arrow {
+    transform: translateX(4px);
+}
+
+@media (max-width: 560px) {
+    .callout {
+        gap: 14px;
+        padding: 18px 20px;
+    }
+}
+
 /* Body content */
 h3 {
     font-weight: 700;

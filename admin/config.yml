@@ -1,0 +1,21 @@
+# Sveltia CMS (open source, Decap-compatible): edit the "details" windows in your browser.
+# Sign in at /admin/ with a GitHub token, or on localhost choose "Work with Local Repository".
+backend:
+  name: github
+  repo: gdavid7/gdavid7.github.io
+  branch: main
+
+media_folder: images/content
+public_folder: /images/content
+
+collections:
+  - name: experience
+    label: Experience details
+    folder: content
+    extension: md
+    create: false
+    delete: false
+    identifier_field: title
+    fields:
+      - { name: title, label: Name (just a label for this list), widget: string }
+      - { name: body, label: Details, widget: markdown }
